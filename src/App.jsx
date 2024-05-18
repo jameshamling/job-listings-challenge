@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import './App.css'
+import Background from './Background.jsx'
 
 function App() {
 
   return (
     <>
-      <h1 style={{fontFamily: 'sans-serif', color: '#337'}}>Job Listings Challenge ☺</h1>
+      <Background />
     </>
   )
 }
