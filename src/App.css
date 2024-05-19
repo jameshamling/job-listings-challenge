@@ -35,36 +35,18 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* Reset End */
 
-/* - Desaturated Dark Cyan: hsl(180, 29%, 50%)
-
-### Neutral
-
-- Light Grayish Cyan (Background): hsl(180, 52%, 96%)
-- Light Grayish Cyan (Filter Tablets): hsl(180, 31%, 95%)
-- Dark Grayish Cyan: hsl(180, 8%, 52%)
-- Very Dark Grayish Cyan: hsl(180, 14%, 20%)
-
-## Typography
-
-### Body Copy
-
-- Font size: 15px
-
-### Headings
-
-- Family: [League Spartan](https://fonts.google.com/specimen/League+Spartan)
-- Weights: 500, 700 */
-
 /*
   Custom Variables
 */
 :root {
-    --clr-primary-1: hsl(180, 29%, 50%);
+    --clr-primary-1: 91, 164, 164;
+    
+    --clr-white: 251, 251, 254;
 
-    --clr-neutral-1: hsl(180, 52%, 96%);
-    --clr-neutral-2: hsl(180, 31%, 95%);
-    --clr-neutral-3: hsl(180, 8%, 52%);
-    --clr-neutral-4: hsl(180, 14%, 20%);
+    --clr-neutral-1: 239, 250, 250;
+    --clr-neutral-2: 238, 246, 246;
+    --clr-neutral-3: 123, 142, 142;
+    --clr-neutral-4: 44, 58, 58;
 
     --fs-body: 15px;
 

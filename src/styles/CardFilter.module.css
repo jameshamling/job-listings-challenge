@@ -1,0 +1,20 @@
+.filter_container {
+    background-color: rgb(var(--clr-neutral-2));
+    color: rgb(var(--clr-primary-1));
+    width: min-content;
+    padding: 0.6em 0.6em;
+    border-radius: 5px;
+}
+
+.filter_container:active,
+.filter_container:hover,
+.filter_container:focus {
+    background-color: rgb(var(--clr-primary-1));
+    color: rgb(var(--clr-white));
+}
+
+.text {
+    font-weight: var(--fw-heavy);
+    line-height: 1;
+    margin-bottom: -4px;
+}

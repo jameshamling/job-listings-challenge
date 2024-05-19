@@ -1,0 +1,26 @@
+.primary {
+    background-color: rgb(var(--clr-primary-1));;
+}
+
+.secondary {
+    background-color: rgb(var(--clr-neutral-4));
+}
+
+.primary,
+.secondary {
+    width: min-content;
+    display: flex;
+    align-items: center;
+    padding: 0.5em 0.8em;
+    border-radius: 2em;
+    margin-top: -4px;
+}
+
+.text {
+    color: rgb(var(--clr-neutral-1));
+    font-weight: var(--fw-heavy);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1;
+    margin-bottom: -4px;
+}   
