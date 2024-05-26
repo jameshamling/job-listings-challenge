@@ -1,0 +1,42 @@
+.filterbox_container {
+    background: rgb(var(--clr-white));;
+
+    border-radius: 5px;
+    height: min-content;
+    width: 100%;
+    max-width: 1100px;
+    box-shadow: 0 0.5em 0.5em rgba(var(--clr-neutral-3), 0.2);
+
+    padding: 1.5rem;
+    margin-block: 2em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.filter_tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.clear {
+    font-weight: var(--fw-heavy);
+    color: rgb(var(--clr-neutral-3));
+    cursor: pointer;
+}
+
+.clear:focus,
+.clear:active,
+.clear:hover {
+    color: rgb(var(--clr-primary-1));
+    text-decoration: underline;
+}
+
+@media (min-width: 750px) {
+    .filterbox_container {
+        padding-inline: 2em;
+    }
+}

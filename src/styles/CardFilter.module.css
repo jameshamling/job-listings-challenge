@@ -4,6 +4,7 @@
     width: min-content;
     padding: 0.6em 0.6em;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .filter_container:active,

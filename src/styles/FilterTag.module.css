@@ -1,0 +1,35 @@
+.filtertag_container {
+    display: flex;
+    line-height: 1;
+}
+
+.text_container {
+    display: flex;
+    align-items: center;
+    background-color: rgb(var(--clr-neutral-2));
+    padding: 0.6em;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.text {
+    color: rgb(var(--clr-primary-1));
+    font-weight: var(--fw-heavy);
+    margin-bottom: -4px;
+}
+
+.img_container {
+    display: flex;
+    align-items: center;
+    background-color: rgb(var(--clr-primary-1));
+    padding: 0.6em;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.img_container:focus,
+.img_container:active,
+.img_container:hover {
+    background-color: rgb(var(--clr-neutral-4));
+}

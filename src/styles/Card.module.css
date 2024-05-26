@@ -18,12 +18,31 @@
 
 .logo_container {
     position: relative;
-    height: 38px;
+    height: 30px;
 }
 
 .logo {
-    height: 76px;
+    height: 60px;
     position: absolute;
     top: 0;
     transform: translateY(-50%);
+}
+
+@media (min-width: 750px) {
+    .card_container {
+        flex-direction: row;
+        align-items: center;
+        padding-block: 1.5em;
+        padding-inline: 2em;
+    }
+
+    .logo_container {
+        height: auto;
+    }
+
+    .logo {
+        position: relative;
+        transform: translateY(0);
+        height: auto;
+    }
 }
