@@ -2,12 +2,12 @@ import React from 'react'
 import FilterTag from './FilterTag'
 import styles from './styles/FilterBox.module.css'
 
-function FilterBox({filterList, removeFilter}) {
+function FilterBox({filterList, removeFilter, clearFilters}) {
 
     const filters = []
 
     filterList.map((filter, i) => {
-        filters.push(<FilterTag name={filter} key={i} removeFilter={removeFilter}/>)
+        filters.push(<FilterTag name={filter} key={i} removeFilter={removeFilter} />)
     })
 
     return (
@@ -15,7 +15,7 @@ function FilterBox({filterList, removeFilter}) {
             <div className={styles.filter_tags}>
                 {filters}
             </div>
-            <p className={styles.clear}>Clear</p>
+            <p className={styles.clear} onClick={clearFilters}>Clear</p>
         </div>
     )
 }

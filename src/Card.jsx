@@ -4,13 +4,15 @@ import CardText from './CardText.jsx'
 import CardFilters from './CardFilters.jsx'
 
 function Card(props) {
+    const {addFilter, data} = props
+
     return (
-        <div className={styles.card_container}>
+        <div className={`${styles.card_container} ${data.featured && styles.featured}`}>
             <div className={styles.logo_container}>
-                <img src="/assets/images/account.svg" alt="account logo" className={styles.logo}/>
+                <img src={data.logo} alt={`${data.company} logo`} className={styles.logo}/>
             </div>
-            <CardText />
-            <CardFilters addFilter={props.addFilter}/>
+            <CardText company={data.company} newTag={data.newTag} featured={data.featured} position={data.position} postedAt={data.postedAt} contract={data.contract} location={data.location}/>
+            <CardFilters addFilter={addFilter} filters={[data.role, data.level, ...data.tools, ...data.languages]}/>
         </div>
     )
 }
