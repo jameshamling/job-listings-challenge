@@ -1,14 +1,13 @@
 import React from 'react'
 import styles from './styles/FilterTag.module.css'
 
-function FilterTag({tag}) {
-
+function FilterTag({name, removeFilter}) {
     return (
-        <div className={styles.filtertag_container}>
+        <div className={`filterTagContainer ${styles.filtertag_container}`} id={name}>
             <div className={styles.text_container}>
-                <p className={styles.text}>{tag}</p>
+                <p className={styles.text}>{name}</p>
             </div>
-            <div className={styles.img_container}>
+            <div className={styles.img_container} onClick={removeFilter}>
                 <img src='/assets/images/icon-remove.svg' alt='close'/>
             </div>
         </div>

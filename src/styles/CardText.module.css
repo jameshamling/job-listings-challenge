@@ -17,7 +17,15 @@
 .role {
     color: rgb(var(--clr-neutral-4));
     font-weight: var(--fw-heavy);
+    font-size: 1.2rem;
     grid-column: 1/3;
+    cursor: pointer;
+}
+
+.role:active,
+.role:focus,
+.role:hover {
+    color: rgb(var(--clr-primary-1));
 }
 
 .facts {
