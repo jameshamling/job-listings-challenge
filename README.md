@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](/assets/images/final-project.png)
+![](./final-project.png)
 
 ### Links
 
