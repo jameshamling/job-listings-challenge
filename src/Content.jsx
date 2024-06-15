@@ -28,12 +28,23 @@ function Content() {
         setFilterList([])
     }
 
-    const cards = data.map(item => <Card addFilter={handleAddFilter} key={item.id} data={item} />)
+    const allData = data.map(item => {
+        return {
+            data: item, 
+            filters: [item.role, item.level, ...item.tools, ...item.languages]
+        }
+    })
+
+    const allCards = allData.map(item => <Card addFilter={handleAddFilter} key={item.data.id} data={item.data} filters={item.filters} />)
+
+    //filter cards based on filterList
+    const filteredData = allData.filter(item => item.filters.some(filter => filterList.includes(filter)))
+    const filteredCards = filteredData.map(item => <Card addFilter={handleAddFilter} key={item.data.id} data={item.data} filters={item.filters} />)
 
     return (
         <div className={styles.content_container}>
             <FilterBox filterList={filterList} removeFilter={handleRemoveFilter} clearFilters={clearFilters}/>
-            {cards}
+            {filterList.length > 0 ? filteredCards : allCards}
         </div>
     )
 }

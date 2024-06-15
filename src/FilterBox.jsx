@@ -11,7 +11,7 @@ function FilterBox({filterList, removeFilter, clearFilters}) {
     })
 
     return (
-        <div className={styles.filterbox_container}>
+        <div className={`${styles.filterbox_container} ${filterList.length === 0 ? styles.filterbox_hidden : ''}`}>
             <div className={styles.filter_tags}>
                 {filters}
             </div>
